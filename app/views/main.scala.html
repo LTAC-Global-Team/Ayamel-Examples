@@ -157,7 +157,7 @@
                                             <div><a href="@routes.Courses.list()">Course Directory</a></div>
                                         }
                                         <div><a href="@routes.Application.about()">About Ayamel</a></div>
-                                        <div><a href="mailto:@configuration.getString("smtp.address").get">Contact Us</a></div>
+                                        <div>Contact Us: <a href="mailto:@configuration.getString("smtp.address").get">@configuration.getString("smtp.address").get</a></div>
                                     </div>
                                     <div class="span3">
                                         <div><a href="@routes.Application.terms()">Terms of Use</a></div>

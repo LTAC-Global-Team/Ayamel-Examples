@@ -90,3 +90,9 @@ body {
     display: inline-block;
     margin: 10px;
 }
+
+#ext-login-bar a {
+	display: block;
+	margin: 0 auto;
+	max-width: 200px;
+}
