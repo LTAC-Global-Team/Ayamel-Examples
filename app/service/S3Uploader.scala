@@ -42,7 +42,8 @@ object S3Uploader extends UploadEngine {
         inputStream.close()
 
         // Return the URL
-        "https://s3.amazonaws.com/" + bucket + "/" + filename
+        //"https://s3.amazonaws.com/" + bucket + "/" + filename
+		"https://"+ bucket +".s3.amazonaws.com/" + filename
       } catch {
         case e:AmazonClientException =>
           Logger.debug("Amazon Client Exception: " + e.getMessage())
