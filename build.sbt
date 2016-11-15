@@ -5,6 +5,7 @@ version      := "1.0-SNAPSHOT"
 scalaVersion := "2.11.7"
 
 TwirlKeys.templateImports += "dependencies._"
+libraryDependencies += evolutions
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala).settings(
   libraryDependencies ++= Seq(

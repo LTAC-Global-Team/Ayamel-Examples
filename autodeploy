@@ -1,0 +1,7 @@
+#!/bin/bash
+cd /var/www/html/ayamel
+git fetch origin
+fuser -k 32482/tcp
+activator stage
+rm target/universal/stage/RUNNING_PID
+target/universal/stage/bin/ayamelexamples -Dhttp.port=32482 &
